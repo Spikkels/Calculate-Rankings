@@ -1,7 +1,4 @@
-# from application.CalculateRankings import CalculateRankings
-# from application import UserInterface
 from application import CalculateRankings, UserInterface
-
 
 def main():
     leagueScores = CalculateRankings.CalculateRankings()

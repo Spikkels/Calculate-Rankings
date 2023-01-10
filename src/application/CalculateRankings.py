@@ -1,5 +1,3 @@
-import re
-
 class CalculateRankings:
     """ 
     Add Score to team 
@@ -204,5 +202,3 @@ class CalculateRankings:
         """
         self.rankings = self.backupRankings.copy()
 
-
- 
