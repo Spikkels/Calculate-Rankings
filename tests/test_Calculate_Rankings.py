@@ -149,19 +149,19 @@ class TestCalculateRankings(unittest.TestCase):
     ###################
     ###################  Import input single line tests
     ################### 
-    def test_ranking_Basic_Basic1(self):
+    def test_ranking_Basic1(self):
         input1: list(str) = ["AAAA 4, BBBB 0"]
 
         self.manualInput.inputGameResultsFromInput(input1)
         result = self.manualInput.calculateRankings()
         self.assertEqual(result, '1. AAAA: 3 pts\n2. BBBB: 0 pts')
 
-    def test_ranking_Basic_Basic2(self):
+    def test_ranking_Basic2(self):
         input1: list(str) = ["AAAA 2, BBBB 2"]
 
         self.manualInput.inputGameResultsFromInput(input1)
         result = self.manualInput.calculateRankings()
-        self.assertEqual(result, '1. AAAA: 1 pts\n1. BBBB: 1 pts')
+        self.assertEqual(result, '1. AAAA: 1 pt\n1. BBBB: 1 pt')
 
     def test_ranking_results_sorting1(self):
         input1: list(str) = ["AAAA 2, BBBB 3"] 
@@ -172,7 +172,7 @@ class TestCalculateRankings(unittest.TestCase):
 
         self.manualInput.inputGameResultsFromInput(input1 + input2 + input3 + input4 + input5)
         result = self.manualInput.calculateRankings()
-        self.assertEqual(result, '1. DDDD: 7 pts\n2. BBBB: 3 pts\n3. AAAA: 1 pts\n3. CCCC: 1 pts\n3. EEEE: 1 pts')
+        self.assertEqual(result, '1. DDDD: 7 pts\n2. BBBB: 3 pts\n3. AAAA: 1 pt\n3. CCCC: 1 pt\n3. EEEE: 1 pt')
 
     def test_ranking_results_sorting2(self):
         input1: list(str) = ["AAAA 2, BBBB 3"]
@@ -183,5 +183,5 @@ class TestCalculateRankings(unittest.TestCase):
 
         self.manualInput.inputGameResultsFromInput(input5 + input4 + input3 + input2 + input1)
         result = self.manualInput.calculateRankings()
-        self.assertEqual(result, '1. DDDD: 7 pts\n2. BBBB: 3 pts\n3. AAAA: 1 pts\n3. CCCC: 1 pts\n3. EEEE: 1 pts')
+        self.assertEqual(result, '1. DDDD: 7 pts\n2. BBBB: 3 pts\n3. AAAA: 1 pt\n3. CCCC: 1 pt\n3. EEEE: 1 pt')
 

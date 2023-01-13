@@ -57,7 +57,7 @@ class CalculateRankings:
         1. England: 4 pts
         2. France: 3 pts
         2. Turkey: 3 pts
-        4. Spain: 1 pts
+        4. Spain: 1 pt
 
         :return: Literal string with output
         """
@@ -75,7 +75,10 @@ class CalculateRankings:
             if i > 0 and value != sortedByWinners[i-1][1]:
                 counter = i + 1
             # Append the formatted string to the list
-            output_list.append(f"{counter}. {key}: {value} pts")
+            if (value != 1):
+                output_list.append(f"{counter}. {key}: {value} pts")
+            else:
+                output_list.append(f"{counter}. {key}: {value} pt")
 
         # Join the strings in the list with newlines
         output_string = '\n'.join(output_list)

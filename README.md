@@ -8,8 +8,8 @@ Teams with the same league score are given the same Rank
 Example: 
 1. Tarantulas: 6 pts
 2. Lions: 5 pts
-3. FC Awesome: 1 pts
-3. Snakes: 1 pts
+3. FC Awesome: 1 pt
+3. Snakes: 1 pt
 5. Grouches: 0 pts
 
 Game results can be manually inserted or imported from a file.
